@@ -11,17 +11,11 @@ Checks if sum of divisors is equal to the number.
 
 ```jl
 function is_perfect(n)
-  s = 0
-  for i = 1:Int(floor(n/2))
-    if n % i == 0
-      s += i 
-    end
-  end
-  if s == n
-    return true
-  else
-    return false 
-  end
+	s = 0
+	for i = 1:Int(floor(n/2))
+		n % i == 0 ? s += i : s += 0
+	end
+	return s == n ? true : false
 end
 ```
 
