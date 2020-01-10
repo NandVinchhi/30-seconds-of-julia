@@ -1,0 +1,8 @@
+new_snippet:
+  - snippets/*.md
+ 
+root_branch:
+  - ./*
+  
+  
+ 
